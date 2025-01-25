@@ -11,6 +11,7 @@ function App() {
   console.log("PUBLIC_URL", process.env.PUBLIC_URL);
   console.log("REACT_APP_URL", process.env.REACT_APP_URL);
   console.log("REACT_APP_PUBLIC_URL", process.env.REACT_APP_PUBLIC_URL);
+  console.log("REACT_APP_TEST", process.env.REACT_APP_TEST);
   console.log("basename", basename);
   return (
     <BrowserRouter basename={basename}>
