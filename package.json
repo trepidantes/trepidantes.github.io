@@ -4,8 +4,6 @@
   "private": true,
   "homepage": "https://trepidantes.github.io/frontend",
   "dependencies": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "cra-template": "1.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -13,6 +11,8 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
