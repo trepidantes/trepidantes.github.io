@@ -19,7 +19,7 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Trepidantes <code>on construction</code> v0.0.2
+            <code className="text-4xl text-blue-500 font-bold italic underline">on construction</code> v0.0.2
           </p>
           <a
             className="App-link"
