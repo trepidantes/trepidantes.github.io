@@ -27,7 +27,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Go to Trepidantes
+            Go to Trepidantes 1
           </a>
         </header>
       </div>
