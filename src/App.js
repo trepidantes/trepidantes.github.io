@@ -19,15 +19,15 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            <code className="text-4xl text-blue-500 font-bold italic underline">on construction</code> v0.0.2
+            <code>on construction</code> v0.0.3
           </p>
           <a
-            className="App-link"
+            className="text-4xl text-blue-500 font-bold italic underline"
             href="https://trepidantes.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Go to Trepidantes 1
+            Go to Trepidantes
           </a>
         </header>
       </div>
