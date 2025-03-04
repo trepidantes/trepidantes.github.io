@@ -1,6 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from './components/common/layout/Layout';
+import { Home } from './pages/Home';
+import { Onboarding } from './pages/Onboarding';
 
 let basename = document.querySelector('base')?.getAttribute('href') ?? '/';
 if (basename === '' || basename === ' ') {
@@ -15,22 +17,12 @@ function App() {
   console.log("basename", basename);
   return (
     <BrowserRouter basename={basename}>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            <code>on construction</code> v0.0.3
-          </p>
-          <a
-            className="text-4xl text-blue-500 font-bold italic underline"
-            href="https://trepidantes.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Go to Trepidantes
-          </a>
-        </header>
-      </div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/onboarding" element={<Onboarding />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }
